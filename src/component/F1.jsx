@@ -42,48 +42,38 @@ const F1 = () => {
               <h6 className="font-mono">Live Demo</h6>
             </div>
           </div>
-        
-    <div
-  className="bg-no-repeat mt-16 p-4 rounded-3xl text-white"
-  style={{
-    backgroundImage: "url('/src/assets/Rectangle 15.png')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: "15px",
-    width:"450px",
-  }}
->
 
-  {/* Profile + Name + Rating */}
-  <div className="flex items-center gap-4">
-    
-    {/* Profile Image */}
-    <img
-      src="/src/assets/profile.png"
-      alt="profile"
-      className="w-16 h-16 rounded-full object-cover"
-    />
+          <div
+            className="bg-no-repeat mt-16 p-4 rounded-3xl text-white"
+            style={{
+              backgroundImage: "url('/src/assets/Rectangle 15.png')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              minHeight: "15px",
+              width: "450px",
+            }}
+          >
+            {/* Profile + Name + Rating */}
+            <div className="flex items-center gap-4">
+              <img
+                src="/src/assets/profile.png"
+                alt="profile"
+                className="w-16 h-16 rounded-full object-cover"
+              />
 
-    {/* Name & Stars */}
-    <div className="flex flex-col">
-      <h3 className="text-white text-xl font-semibold">John Doe</h3>
+              <div className="flex flex-col">
+                <h3 className="text-white text-xl font-semibold">John Doe</h3>
+                <div className="flex text-yellow-400 text-lg">★★★★★</div>
+              </div>
+            </div>
 
-      <div className="flex text-yellow-400 text-lg">
-        ★★★★★
-      </div>
-    </div>
-  </div>
-
-  {/* Review Text */}
-  <div className="mt-4">
-    <p>
-      I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.
-    </p>
-  </div>
-
-</div>
-
-
+            {/* Review Text */}
+            <div className="mt-4">
+              <p>
+                I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* === RIGHT IMAGE + TEXT CARD === */}
@@ -104,9 +94,7 @@ const F1 = () => {
             />
 
             {/* Text */}
-            <h1 className="text-white text-xl font-bold mt-4">
-              Indoor Plant
-            </h1>
+            <h1 className="text-white text-xl font-bold mt-4">Indoor Plant</h1>
 
             {/* Aglaonema + MoveRight */}
             <div className="flex items-center gap-24 mb-4">
@@ -120,13 +108,18 @@ const F1 = () => {
             <button className="px-8 py-2 border-2 border-white rounded text-white">
               Buy Now
             </button>
+
+            {/* ⭐ Slider Indicators */}
+            <div className="flex items-center gap-2 mt-4 self-center">
+              <div className="w-5 h-1 bg-white rounded-full"></div>
+              <div className="w-2 h-2 bg-white/60 rounded-full"></div>
+              <div className="w-2 h-2 bg-white/60 rounded-full"></div>
+            </div>
           </div>
         </div>
-
       </div>
 
-
-     <F2 />
+      <F2 />
     </div>
   );
 };

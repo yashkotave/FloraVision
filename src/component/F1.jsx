@@ -9,6 +9,7 @@ import {
   Share,
 } from "lucide-react";
 import Navbar from "./Navbar";
+import F2 from "./F2";
 
 const F1 = () => {
   return (
@@ -16,20 +17,17 @@ const F1 = () => {
       className="bg-[#1C2419] w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/src/assets/ped.jpg')",
-        height: "2500px",
+        height: "2000px",
       }}
     >
       <Navbar />
 
       <div className="flex w-full h-[80vh]">
         {/* === LEFT TEXT SECTION === */}
-        <div className="w-1/2 text-white justify-center p-4 flex flex-col">
+        <div className="w-1/2 text-white justify-center p-4 flex flex-col pt-24">
           <h1 className="text-8xl font-bold">Earth's Exhale</h1>
           <p className="text-1xl">
-            "Lorem ipsum" dolor sit amet consectetur adipisicing elit.
-            Dignissimos eos commodi voluptatibus beatae veniam minus eaque
-            placeat quos blanditiis. Aliquam asperiores reiciendis soluta et
-            iusto.
+            "Earth Exhale" symbolizes the purity and vitality of the Earth's natural environment and its essential role in sustaining life.
           </p>
 
           <div className="flex gap-2 mt-4">
@@ -61,7 +59,7 @@ const F1 = () => {
     
     {/* Profile Image */}
     <img
-      src="/src/assets/profile.jpg"
+      src="/src/assets/profile.png"
       alt="profile"
       className="w-16 h-16 rounded-full object-cover"
     />
@@ -79,9 +77,7 @@ const F1 = () => {
   {/* Review Text */}
   <div className="mt-4">
     <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus
-      voluptates, modi qui nihil quod doloribus nulla exercitationem pariatur
-      vero dolore facere ullam at quisquam alias.
+      I can't express how thrilled I am with my new natural plants! They bring such a fresh and vibrant energy to my home.
     </p>
   </div>
 
@@ -91,7 +87,7 @@ const F1 = () => {
         </div>
 
         {/* === RIGHT IMAGE + TEXT CARD === */}
-        <div className="w-1/2 flex items-center justify-end mr-8">
+        <div className="w-1/2 flex items-center justify-end mr-8 mt-16">
           <div
             className="relative bg-no-repeat bg-center bg-cover rounded-xl p-6 flex flex-col items-start justify-start text-left"
             style={{
@@ -128,6 +124,9 @@ const F1 = () => {
         </div>
 
       </div>
+
+
+     <F2 />
     </div>
   );
 };
